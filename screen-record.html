@@ -16,6 +16,11 @@
             font-family: 'Open Sans', sans-serif;
             width: 100%;
         }
+
+        .accordion-button:not(.collapsed) {
+            color: var(--bs-accordion-active-color);
+            background-color: var(--bs-white);
+        }
     </style>
 </head>
 
@@ -60,11 +65,13 @@
                                     choose File > New Screen Recording to open
                                     Screenshot and display the tools.
 
-                                    <figure style="margin: 1rem 0;"><img
-                                            src="https://help.apple.com/assets/61E89C38989FED37B56706F1/61E89C39989FED37B56706F8/en_US/1f8c20bdc69611371b985ff24726454f.png"
-                                            alt="Screenshot tools with the Record button on the right and the Options pop-up menu next to it."
-                                            height="59" width="393" originalimagename="Art/S0005_RecScreen.png">
-                                    </figure>
+                                    <div class="container">
+                                        <figure style="margin: 1rem 0;"><img
+                                                src="https://help.apple.com/assets/61E89C38989FED37B56706F1/61E89C39989FED37B56706F8/en_US/1f8c20bdc69611371b985ff24726454f.png"
+                                                alt="Screenshot tools with the Record button on the right and the Options pop-up menu next to it."
+                                                height="59" width="393" originalimagename="Art/S0005_RecScreen.png">
+                                        </figure>
+                                    </div>
                                 </li>
                                 <li>Click Record.</li>
                                 <li>To stop recording, click the Stop Recording button in the menu bar (or
@@ -81,7 +88,7 @@
                             Windows
                         </button>
                     </h2>
-                    <div id="collapseTwo" class="accordion-collapse collapse show">
+                    <div id="collapseTwo" class="accordion-collapse collapse">
                         <div class="accordion-body">
                             <ol>
                                 <li>Press the <strong>Windows logo key + G</strong> on your keyboard to open Xbox Game
@@ -91,8 +98,11 @@
                                 <li>To stop recording, press <strong>Stop Recording</strong> (the square) to end it.
                                 </li>
                             </ol>
-                            <img src="https://support.content.office.net/en-us/media/c1189957-82ef-41ad-9df2-6ed07f5e3035.png"
-                                alt="" loading="lazy">
+                            <div class="container">
+                                <img width="100%"
+                                    src="https://support.content.office.net/en-us/media/c1189957-82ef-41ad-9df2-6ed07f5e3035.png"
+                                    alt="" loading="lazy">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -103,38 +113,45 @@
                             Ubuntu
                         </button>
                     </h2>
-                    <div id="collapseThree" class="accordion-collapse collapse show">
+                    <div id="collapseThree" class="accordion-collapse collapse">
                         <div class="accordion-body">
                             <ol>
                                 <li>Press <strong>Ctrl + Alt + Shift + R</strong> on your keyboard to open
                                     screen-recording pop-up window.
                                 </li>
-                                <img decoding="async" style="margin: 1rem 0" loading="lazy" width="640" height="432"
+                                <div class="container">
+                                <img decoding="async" style="margin: 1rem 0" loading="lazy" width="100%"
                                     src="https://beebom.com/wp-content/uploads/2022/11/Screenshot-from-2022-11-05-12-55-09.jpg?w=640"
                                     alt="Instantly Record the Screen in Ubuntu With a Keyboard Shortcut"
                                     class="wp-image-447355"
                                     srcset="https://beebom.com/wp-content/uploads/2022/11/Screenshot-from-2022-11-05-12-55-09.jpg?quality=75&amp;strip=all 640w, https://beebom.com/wp-content/uploads/2022/11/Screenshot-from-2022-11-05-12-55-09.jpg?resize=300%2C203&amp;quality=75&amp;strip=all 300w"
                                     sizes="(max-width: 640px) 100vw, 640px">
+                                </div>
                                 <li>Click on the red <strong>Record</strong> button to start recording.</li>
                                 <li>To stop recording, click on the <strong>Red Button</strong> in the system tray at
                                     the top-right corner.</li>
-                                <img decoding="async" loading="lazy" width="640" height="360"
-                                    src="https://beebom.com/wp-content/uploads/2022/11/Screenshot-from-2022-11-05-12-58-24.jpg?w=640"
-                                    alt="Instantly Record the Screen in Ubuntu With a Keyboard Shortcut"
-                                    class="wp-image-447356"
-                                    srcset="https://beebom.com/wp-content/uploads/2022/11/Screenshot-from-2022-11-05-12-58-24.jpg?quality=75&amp;strip=all 640w, https://beebom.com/wp-content/uploads/2022/11/Screenshot-from-2022-11-05-12-58-24.jpg?resize=300%2C169&amp;quality=75&amp;strip=all 300w"
-                                    sizes="(max-width: 640px) 100vw, 640px">
-                            </ol>
+                                <div class="container">
+                                    <img decoding="async" loading="lazy" width="100%"
+                                        style="margin-top: 1rem;"
+                                        src="https://beebom.com/wp-content/uploads/2022/11/Screenshot-from-2022-11-05-12-58-24.jpg?w=640"
+                                        alt="Instantly Record the Screen in Ubuntu With a Keyboard Shortcut"
+                                        class="wp-image-447356"
+                                        srcset="https://beebom.com/wp-content/uploads/2022/11/Screenshot-from-2022-11-05-12-58-24.jpg?quality=75&amp;strip=all 640w, https://beebom.com/wp-content/uploads/2022/11/Screenshot-from-2022-11-05-12-58-24.jpg?resize=300%2C169&amp;quality=75&amp;strip=all 300w"
+                                        sizes="(max-width: 640px) 100vw, 640px">
+                                </div>
+
                         </div>
+                        </ol>
                     </div>
                 </div>
             </div>
         </div>
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
