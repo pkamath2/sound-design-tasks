@@ -147,7 +147,7 @@
                         to be sufficiently loud but comfortable. Once it is set, do not change the volume for the entire task.</li>
                     <li>Please use a laptop or desktop computer with a Chrome or Firefox browser to complete the tasks. </li>
                     <li>Please ensure you are sitting in a quiet environment while performing the tasks.</li>
-                    <li>All sounds on these interfaces are generated using a <b>sampling rate of 16khz</b></li>
+                    <li>All sounds on these interfaces are generated using a sampling rate of 16khz.</li>
                 </ul>
                 
             </div>
@@ -242,14 +242,24 @@
                     </div>
                     <div class="col-9 border">
                         <br /><br />
-                        Using the same interface above and any one model (either 'Hits & Scratches' or 'Environmental Sounds') - <br/>
+                        Using the same interface above - <br/>
                         <ul>
                             <li>Create a sound of your choice. A sound that you might use in your practice or performance.</li>
                             <li>Play around with the controls and record a screencast of the activity when you are ready. We will use this video to initiate a discussion during the interview.</li>
                         </ul>
                         <br />
-                        (To record a screencast, please click on the 3 horizontal lines at the top-right corner of the screen and click 'Record screencast'. Please <a
-                        href="https://pkamath2.github.io/sound-design-tasks/screen-record.html" target="_blank">click here</a> for other ways to record your screen.)<br /><br />
+                        <i>
+                            (To record a screencast, - 
+                            <ul>
+                                <li>Please click on the 3 horizontal lines at the top-right corner of the screen and click 'Record screencast'.</li>
+                                <li>Be sure to select 'Also record audio'</li>
+                                <li>Select the tab or window running the interface.</li>
+                                <li>Click on the 3 horizontal lines again and 'Stop Recording' when complete.</li>
+                                
+                            </ul> 
+                            Please <a
+                            href="https://pkamath2.github.io/sound-design-tasks/screen-record.html" target="_blank">click here</a> for other ways to record your screen.)<br /><br />
+                        </i>
                     </div>
                 </div>
                 <div class="row">
@@ -326,7 +336,7 @@
                     </div>
                     <div class="col-9 border">
                         <br /><br />
-                        Using the same interface above and any one model (either 'Hits & Scratches' or 'Environmental Sounds') - <br/>
+                        Using the same interface above - <br/>
                         <ul>
                             <li>Create a sound of your choice. A sound that you might use in your practice or performance.</li>
                             <li>Play around with the controls and record a screencast of the activity when you are ready. We will use this video to initiate a discussion during the interview.</li>
@@ -406,9 +416,15 @@
     </div>
 </body>
 <script>
-    // window.onload = (e) => {
-    //     document.querySelector('video').playbackRate = 2.0;
-    // }
+    window.onload = (e) => {
+        //document.querySelector('video').playbackRate = 2.0;
+        const isChromeOrFirefoxStr =
+            navigator.userAgent.indexOf("Chrome") > -1 ||
+            navigator.userAgent.indexOf("Firefox") > -1;
+        if (!isChromeOrFirefoxStr) {
+            alert("The task for this study are best performed on Chrome or Firefox browsers. Thank you!")
+        }
+    }
 </script>
 
 </html>
